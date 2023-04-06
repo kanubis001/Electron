@@ -1,0 +1,97 @@
+body {
+    /* background-color: rgba(221, 221, 221, 0.418); */
+    background-color: rgba(0, 255, 55, 0.37);
+}
+div{
+    display: block;
+}
+#scopeview{
+    height: 32px;
+    min-width: 270px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto ;
+}
+#scopeview select{
+    height:25px;
+    margin:2px;
+}
+#sel_scope{
+    height:25px;
+    margin:2px;
+}
+.whole_scopecontainer{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.wrapdiv {
+    grid-gap: 3px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.innerView{
+    display: inline-block;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 3px;
+    box-shadow: 3px 2px 7px rgba(180, 180, 180, 0.678);
+    background-color: white;
+    margin:2px;
+}
+.wholeWrap {
+    height: 100%;
+    width: 100%;
+    /* min-height: 400px;
+    min-width: 600px; */
+    grid-gap: 10px;
+    /* display:flex;
+    flex-flow: row nowrap; */
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 58px auto;
+    white-space: nowrap;
+    position: relative;
+    /* background-color: aqua; */
+}
+.side_nav{
+    z-index: 2;
+    position: relative;
+    max-width: 255px;
+    width:100%;
+    height:100%;
+}
+#top {
+    background-color: red;
+}
+
+.middle {
+    z-index: 1;
+    position: relative;
+    /* display: grid;
+    grid-template-columns: 20% 80%; */
+    /* background-color: yellow; */
+}
+
+#treeView {
+    margin-right: 3px;
+}
+
+#contView {
+    margin-left:3px;
+}
+#jstree li{
+    font-size: 10pt;
+}
+.maindiv {
+    display: inline-block;
+    /* float:left; */
+    margin: auto;
+    width: 100%;
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 100px;
+    vertical-align: top;
+    border: 1px solid;
+    border-color: black;
+}

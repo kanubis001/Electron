@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>로그인</title>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/component.css'>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/login.css'>
+    <link rel="stylesheet" href="/src/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/src/font-awesome/css/solid.css">
+
+</head>
+
+<body>
+    <div class="contWrap">
+        <div class="container">
+            <div class="title-bar">
+                <div class="title prevent-select draggable" id="titlebarLeft"><span id="titlespan">로그인</span></div>
+                <div class="control prevent-select" id="titlebarRight">
+                    <button id="min">
+                        <i class="fa-solid fa-window-minimize"></i>
+                    </button>
+                    <button id="max">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </button>
+                    <button id="close">
+                        <i class="fa-solid fa-window-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container_login">
+            <label for="uname"><b>콘솔 URL</b></label>
+            <select name="url" id="url">
+                <option value="" disabled selected>콘솔 URL을 선택하세요</option>
+                <option value="https://apne1-samsungsds.sentinelone.net" selected>apne1-samsungsds</option>
+                <option value="https://apse1-dfir.sentinelone.net">apse1-dfir</option>
+                <option value="https://apse1-2001.sentinelone.net">apse1-2001</option>
+                <option value="https://apne1-1101-nfr.sentinelone.net">apne1-1101-nfr</option>
+                <option value="https://apne1-1001.sentinelone.net">apne1-1001</option>
+                <option value="https://apne1-1002.sentinelone.net">apne1-1002</option>
+            </select>
+            <!-- <input type="text" placeholder="Enter Username" name="uname" required> -->
+
+            <label for="psw"><b>API TOKEN</b></label>
+            <input type="text" placeholder="콘솔에서 발급받은 api 토큰값" name="psw" id="apitoken" value="EaZnbQctNAup8wd6Sur0OpsStOivrq6uHH6OC5nqW6ak07iJRDshUKWBi3BXpIkuRZjXIAOK4NLd5xiw">
+            <button class="btn-2" id="loginconfirm">Login</button>
+            <button class="btn-2_disable">Login</button>
+            <label>
+                <!-- <input type="checkbox" checked="checked" name="remember"> Remember me -->
+            </label>
+        </div>
+
+        <div class="container_login" style="background-color:#f1f1f1">
+            <!-- <button type="button" class="cancelbtn btn-2">Cancel</button> -->
+            <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+        </div>
+    </div>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="/js/jquery.js"></script>
+    <script src="/javascripts/loginScript.js"></script>
+    <script src='/js/function_pop.js'></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>

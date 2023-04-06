@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SentinelOne Manager</title>
+    <link rel="stylesheet" type="text/css" href="/src/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css"  href="/src/font-awesome/css/solid.css">
+    <link rel='stylesheet' type="text/css" href='/stylesheets/index.css'>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/component.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">
+            <div class="title prevent-select draggable" id="titlebarLeft">콤시스 센티넬원 매니저</div>
+            <div class="control prevent-select" id="titlebarRight">
+                <button id="min">
+                    <i class="fa-solid fa-window-minimize"></i>
+                </button>
+                <button id="max">
+                    <i class="fa-solid fa-window-maximize"></i>
+                </button>
+                <button id="close">
+                    <i class="fa-solid fa-window-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="wholeWrap">
+        <div class="innerView" id="contView">
+            <div id="login">
+                <button class="login-btn custom-btn btn-1"><span>login</span></button>
+            </div>
+        </div>
+    </div>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="/js/jquery.js"></script>
+    <script src="/javascripts/indexScript.js"></script>
+    <script src='/js/function.js'></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>

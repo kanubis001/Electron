@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SentinelOne Manager</title>
+
+    <link rel="stylesheet" href="../src/font-awesome/css/fontawesome.css">
+    <link rel="stylesheet" href="../src/font-awesome/css/solid.css">
+    <link rel='stylesheet' type="text/css" href='../stylesheets/main.css'>
+    <link rel='stylesheet' type="text/css" href='../stylesheets/component.css'>
+    <link rel='stylesheet' href="../src/jstree/dist/themes/default/style.min.css">
+    <link rel='stylesheet' href="../stylesheets/sidemenu.css">
+    <link rel="stylesheet" type="text/css" src="../stylesheets/icons.css"/>
+    
+</head>
+
+<body>
+    <div class="body_wrapper">
+        <div class="container">
+            <div class="title-bar">
+                <div class="title prevent-select draggable" id="titlebarLeft">콤시스 센티넬원 매니저</div>
+                <div class="control prevent-select" id="titlebarRight">
+                    <button id="min">
+                        <i class="fa-solid fa-window-minimize"></i>
+                    </button>
+                    <button id="max">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </button>
+                    <button id="close">
+                        <i class="fa-solid fa-window-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="scopetop"></div>
+        <div class="wholeWrap scrollbar2" id="style-1">
+            
+            <div class="side_nav">
+                <nav class="main-menu">
+                    <div class="darkerlicust1" style="text-align:center;">
+                        <a class="logo">
+                            <img class="img-concert" height="40" width="40" src="pic/comsys_S1.png"/>
+                            <!-- <img class="comsyslogo" height="40" width="80" src="pic/comsys_logo.png"/> -->
+                        </a>
+                    </div>
+                    <!-- <div class="settings"></div> -->
+                    <div class="scrollbar" id="style-1">
+                        
+
+                        <li >
+                            <a id="menu_endpoints">
+                                <i class="fa fa-desktop fa-lg"></i>
+                                <span class="nav-text">엔드포인트</span>
+                            </a>
+                        </li>
+
+                        <ul>
+                            <li>
+                                <a id="report">
+                                    <i class="fa fa-bar-chart fa-lg"></i>
+                                    <span class="nav-text">보고서</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="scope">
+                                    <i class="fa fa-search-plus fa-lg"></i>
+                                    <span class="nav-text">스코프 지정</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-plane fa-lg"></i>
+                                    <span class="nav-text">Travel</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-microphone fa-lg"></i>
+                                    <span class="nav-text">Film & Music</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-flask fa-lg"></i>
+                                    <span class="nav-text">Web Tools</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-picture-o fa-lg"></i>
+                                    <span class="nav-text">Art & Design</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-align-left fa-lg"></i>
+                                    <span class="nav-text">Magazines
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-gamepad fa-lg"></i>
+                                    <span class="nav-text">Games</span>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="">
+                                    <i class="fa fa-glass fa-lg"></i>
+                                    <span class="nav-text">Life & Style
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-rocket fa-lg"></i>
+                                    <span class="nav-text">Fun</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+
+                        <li>
+
+                            <a href="">
+                                <i class="fa fa-question-circle fa-lg"></i>
+                                <span class="nav-text">Help</span>
+                            </a>
+                        </li>
+
+
+                        <ul class="logout">
+                            <li>
+                                <a href="">
+                                    <i class="fa fa-lightbulb-o fa-lg"></i>
+                                    <span class="nav-text">
+                                        BLOG
+                                    </span>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="middle boxview" id="contents">
+                
+            </div>
+
+        </div>
+    </div>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="../js/jquery.js"></script>    
+    <script type="text/javascript" src="../js/loadingoverlay.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src='../js/function.js'></script>
+    <script src='../js/renderer.js'></script>
+    <script src="../javascripts/mainScript.js"></script>
+    <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>
